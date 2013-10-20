@@ -31,6 +31,15 @@ Feature toggles can also be initialized via AppSetting:
 &lt;appSetting key="Feature.DisplayHomePageToGoldUsers" value="true" /&gt;
 </code>
 
+<small><i>NOTE: your feature toggle AppSetting key should be prefixed with Feature.</i></small>
+
 <code>
 Features.InitializeFromAppSettings();
+</code>
+
+When you want to check the status of a feature toggle initalized from an AppSetting 
+you would do it just as you would any other feature toggle:
+
+<code>
+var shouldDisplayHomePageToGoldUsers = Features.IsEnabled("DisplayHomePageToGoldUsers");
 </code>
