@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{80FFC5
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlingN.Features.Specs.A", "specs\SlingN.Features.Specs.A\SlingN.Features.Specs.A.csproj", "{250EE4C1-B98E-42ED-B4F4-4096FC4EDBFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "slingn.features.specs", "specs\slingn.features.specs\slingn.features.specs.csproj", "{250EE4C1-B98E-42ED-B4F4-4096FC4EDBFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
