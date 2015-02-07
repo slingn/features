@@ -4,7 +4,7 @@
 -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">  
   <metadata>
-    <id>slingn.features.framework</id>
+    <id>slingn.features</id>
     <version>1.0.0</version>
     <authors>Kasi Prasad</authors>
     <description>A simple  simple feature toggle library .NET</description>
