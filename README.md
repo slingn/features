@@ -21,7 +21,7 @@ var shouldDisplayHomePageToGoldUsers = Feature.IsEnabled("DisplayHomePageToGoldU
 
 Feature toggles can also be initialized via AppSetting:
 ```
-&lt;appSetting key="Feature.DisplayHomePageToGoldUsers" value="true" /&gt;
+<appSetting key="Feature.DisplayHomePageToGoldUsers" value="true" />
 ```
 
 On application start-up
