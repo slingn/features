@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Configuration;
 using Machine.Specifications;
-using SlingN.Features.Framework;
 
-namespace SlingN.Features.Specs.FeatureSpecs
+namespace slingn.features.specs.FeaturesSpecs
 {
     public class When_checking_whether_a_feature_is_enabled_for_a_feature_whose_name_is_unknown
     {

@@ -8,19 +8,19 @@ SlingN.Features is a simple library for controlling feature toggles/flags in you
 To get started, you define a feature toggle:
 
 <code>
-Features.Add("DisplayHomePageToGoldUsers", true);
+Feature.Add("DisplayHomePageToGoldUsers", true);
 </code>
 
 When you want to check the status of a feature toggle:
 
 <code>
-var shouldDisplayHomePageToGoldUsers = Features.IsEnabled("DisplayHomePageToGoldUsers");
+var shouldDisplayHomePageToGoldUsers = Feature.IsEnabled("DisplayHomePageToGoldUsers");
 </code>
 
 Feature toggles can also be defined using a runtime evaluation as such:
 
 <code>
-Features.Add("DisplayHomePageToGoldUsers", () => { 
+Feature.Add("DisplayHomePageToGoldUsers", () => { 
 	HttpContext.Current.Request.QueryString["gold"] == "true" 
 });
 </code>
@@ -34,12 +34,12 @@ Feature toggles can also be initialized via AppSetting:
 <small><i>NOTE: your feature toggle AppSetting key should be prefixed with Feature.</i></small>
 
 <code>
-Features.InitializeFromAppSettings();
+Feature.InitializeFromAppSettings();
 </code>
 
 When you want to check the status of a feature toggle initalized from an AppSetting 
 you would do it just as you would any other feature toggle:
 
 <code>
-var shouldDisplayHomePageToGoldUsers = Features.IsEnabled("DisplayHomePageToGoldUsers");
+var shouldDisplayHomePageToGoldUsers = Feature.IsEnabled("DisplayHomePageToGoldUsers");
 </code>
